@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b725f83-8b3e-4b1b-be87-80f1ba494e9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaScript/ChangeButtonColor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/ShowHideRepos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/onhover.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/ChangeButtonColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/ChangeButtonColor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC-Admin\MitkoVtori.github.io\styles" />
       <recent name="C:\Users\PC-Admin\Documents\MitkoVtori\JavaScript" />
     </key>
   </component>
@@ -60,5 +62,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
