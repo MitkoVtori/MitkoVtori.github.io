@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web CV - Portfolio</title>
+    <script src="JavaScript/ChangeButtonColor.js"></script>
+    <script src="JavaScript/switchimage.js"></script>
+    <script src="JavaScript/ShowHideRepos.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favico.jpg">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/onhover.css">
+    <link rel="stylesheet" href="styles/social.css">
 </head>
 <body>
     <div id="sections">
         <p>
-            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor()" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 20%">Home</button></a>
+            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor()" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 21%">Home</button></a>
             <a href="#About"><button class="hover" onclick="ChangeAboutButtonColor()" id="AboutButton" style="background: black; color: white; margin-left: 3%">About</button></a>
             <a href="#certificates"><button class="hover" onclick="ChangeCertificatesButtonColor()" id="certificatesButton" style="background: black; color: white; margin-left: 3%">Certificates</button></a>
             <a href="#TopRepos"><button class="hover" onclick="ChangeRepoButtonColor()" id="RepoButton" style="background: black; color: white; margin-left: 3%">Repositories</button></a>
-            <script src="JavaScript/ChangeButtonColor.js"></script>
+            <a href="#socials"><button class="hover" onclick="ChangeSocialsButtonColor()" id="SocialsButton" style="background: black; color: white; margin-left: 3%">Socials</button></a>
         </p>
     </div>
     <div class="home">
@@ -58,7 +62,7 @@
     <div class="certificates">
         <section id="certificates">
             <a href="https://softuni.bg/Certificates/Details/148911/81475bf5">
-                <img class="hover" style="margin-top: 5%; margin-left: 35%; width: 25%; margin-bottom: 5%;" src="images/Programming Fundamentals with Python - September 2022 - Certificate.png">
+                    <img class="hover" onmouseover="certificateHover(this);" onmouseout="certificateUnhover(this);" id="curriculum" style="margin-top: 5%; margin-left: 35%; width: 25%; margin-bottom: 5%;" src="images/Programming Fundamentals with Python - September 2022 - Certificate.png">
             </a>
         </section>
     </div>
@@ -67,7 +71,6 @@
             <br>
             <p style="color: white; margin-top: 10%; font-size: 550%">Top Repositories</p>
             <a href="#repositories"><img width="700" class="hover" onclick="ShowHideRepos()" src="videos/TopRepos.gif"></a>
-            <script src="JavaScript/ShowHideRepos.js"></script>
         </section>
             <div class="expandable" id="repositories">
                 <section>
@@ -97,6 +100,31 @@
                     <img width="250" src="images/StackOverflow.png">
                 </button>
             </a>
+        </section>
+    </div>
+    <div class="socialmedia">
+        <section id="socials">
+            <ul style="margin: 0" class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100080198403604" class="social-square" id="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/insta_mitkov07/" class="social-square" id="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@mitkovtori" class="social-square" id="youtube"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dimitar-dimitrov-274807254/" class="social-square" id="in"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/MitkoVtori" class="social-square" id="git"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/20446595/mitko-vtori" class="social-square" id="stackoverflo"><i class="fa fa-stack-overflow"></i></a></li>
+            </ul>
+        </section>
+        <section id="topSecret">
+            <button onmouseover="buttonHover(this);" onmouseout="buttonUnhover(this);" id="topSecretButton"><span style="font-size: 250%">Top Secret</span></button>
+            <a href="https://github.com/MitkoVtori/MitkoVtori.github.io">
+                <img class="hover" id="streak" onmouseover="streakStatsHover(this);" onmouseout="streakStatsUnhover(this);" alt="My GitHub Streak Stats" src="https://streak-stats.demolab.com?user=MitkoVtori&theme=highcontrast">
+            </a>
+            <section id="source">
+                <p>View page source
+                    <a href="https://github.com/MitkoVtori/MitkoVtori.github.io">
+                        <button>MitkoVtori.github.io Page Source Code</button>
+                    </a>
+                </p>
+            </section>
         </section>
     </div>
 </body>

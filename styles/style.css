@@ -7,9 +7,14 @@ body {
 #sections {
     background: black;
     margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 7%;
+    width: 100%;
 }
     #sections button {
-        font-size: 50px;
+        font-size: 35px;
     }
 
 .home {
@@ -55,4 +60,50 @@ body {
 #StackOverflow {
     margin-top: 10%;
     margin-left: 40%;
+}
+#topSecret {
+    background: gray;
+    height: 500px;
+}
+#topSecretButton {
+    transition: .5s;
+    background-color: #E9BE0E;
+    color: #424B4D;
+    border: 75;
+    height: 14%;
+    width: 15%;
+    margin-top: 12%;
+    margin-left: 7%;
+}
+#topSecretButton:hover {
+    background: gray;
+    border: 0;
+    color: gray;
+    transition: 0s 0s;
+}
+#hiddenText {
+    display: none;
+}
+#topSecretButton:focus + #hiddenText {
+    display: block;
+}
+#topSecretButton:hover span {
+  display: none
+}
+#streak {
+    float:right;
+    margin-right: 25%;
+    margin-top: 8%;
+    width: 35%;
+}
+#source {
+    margin-top: 9%;
+    margin-left: 0.85%;
+    font-size: 125%;
+}
+#source button {
+    background: gray;
+    border: 0;
+    font-size: 100%;
+    color: #9C00F0;
 }
