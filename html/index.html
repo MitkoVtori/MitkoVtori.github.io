@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web CV - Portfolio</title>
+    <script src="JavaScript/ChangeButtonColor.js"></script>
+    <script src="JavaScript/switchimage.js"></script>
+    <script src="JavaScript/ShowHideRepos.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favico.jpg">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/onhover.css">
+    <link rel="stylesheet" href="styles/social.css">
+</head>
+<body>
+    <div id="sections">
+        <p>
+            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor()" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 21%">Home</button></a>
+            <a href="#About"><button class="hover" onclick="ChangeAboutButtonColor()" id="AboutButton" style="background: black; color: white; margin-left: 3%">About</button></a>
+            <a href="#certificates"><button class="hover" onclick="ChangeCertificatesButtonColor()" id="certificatesButton" style="background: black; color: white; margin-left: 3%">Certificates</button></a>
+            <a href="#TopRepos"><button class="hover" onclick="ChangeRepoButtonColor()" id="RepoButton" style="background: black; color: white; margin-left: 3%">Repositories</button></a>
+            <a href="#socials"><button class="hover" onclick="ChangeSocialsButtonColor()" id="SocialsButton" style="background: black; color: white; margin-left: 3%">Socials</button></a>
+        </p>
+    </div>
+    <div class="home">
+        <section id="home">
+        <img width="15%" border="7" class="hover" style="margin-left: 25%; margin-top: 15%" src="images/profile pic.jpg">
+        <img width="20%" class="hover" src="images/Hey.gif">
+        <br>
+        <img width="25%" class="hover" style="margin-left: 36%" src="images/name.gif">
+        </section>
+        <section id="GitHub">
+            <a href="https://github.com/MitkoVtori">
+                <button class="hover" style="background: black; color: #EAECEC; font-size: 35px">
+                    <img width="25" src="images/GitHub.png"> GitHub
+                </button>
+            </a>
+        </section>
+    </div>
+    <div class="About">
+        <section id="About">
+            <p>
+                <img class="hover" src="images/Programmer.gif" style="float:right; margin-right: 5%; width: 25%">
+                <br>
+                <br>
+                <br>
+                <p style="margin: 0; font-size: 95%; margin-left: 8%">My name is Dimitar Dimitrov - Python student at <a href="https://softuni.bg" style="color: #B250DF">SoftUni</a></p>
+                <p style="margin: 0; margin-left: 17%; margin-top: 1%">English Level - B2</p>
+                <p style="margin: 0; margin-left: 17%">Native language - Bulgarian</p>
+                <p style="margin: 0; margin-left: 17%; margin-bottom: 1%">Mid Professional Gamer</p>
+                <p style="margin: 0; font-size: 95%; margin-left: 8%">Familiar with: Python, HTML, CSS, PyCharm, VS Code & More</p>
+            </p>
+        </section>
+        <section id="Linkedin">
+            <a href="https://www.linkedin.com/in/dimitar-dimitrov-274807254/">
+                <button class="hover" style="font-size: 30px; background: #4ACFF0; color: #2C6EF1">
+                    <img width="30" src="images/LinkedIN.png"> Linkedin
+                </button>
+            </a>
+        </section>
+    </div>
+    <div class="certificates">
+        <section id="certificates">
+            <a href="https://softuni.bg/Certificates/Details/148911/81475bf5">
+                    <img class="hover" onmouseover="certificateHover(this);" onmouseout="certificateUnhover(this);" id="curriculum" style="margin-top: 5%; margin-left: 35%; width: 25%; margin-bottom: 5%;" src="images/Programming Fundamentals with Python - September 2022 - Certificate.png">
+            </a>
+        </section>
+    </div>
+    <div class="TopRepos">
+        <section id="TopRepos">
+            <br>
+            <p style="color: white; margin-top: 10%; font-size: 550%">Top Repositories</p>
+            <a href="#repositories"><img width="700" class="hover" onclick="ShowHideRepos()" src="videos/TopRepos.gif"></a>
+        </section>
+            <div class="expandable" id="repositories">
+                <section>
+                    <a href="https://github.com/MitkoVtori/Mitko.Vtori-World"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Mitko.Vtori-World"/></a>
+                    <a href="https://github.com/MitkoVtori/PyScript-Calculator"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=PyScript-Calculator"/></a>
+                    <a href="https://github.com/MitkoVtori/SoftUni-Fundamentals-September-2022"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=SoftUni-Fundamentals-September-2022"/></a>
+                    <a href="https://github.com/MitkoVtori/FlappyRocket"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=FlappyRocket"/></a>
+                    <a href="https://github.com/MitkoVtori/MitkoVtori"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=MitkoVtori"/></a>
+                    <a href="https://github.com/MitkoVtori/MitkoVtori.github.io"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=MitkoVtori.github.io"/></a>
+                    <a href="https://github.com/MitkoVtori/worldcup-countdown"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=worldcup-countdown"/></a>
+                    <a href="https://github.com/MitkoVtori/SoftUni-Python-Fundamentals-page"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=SoftUni-Python-Fundamentals-page"/></a>
+                    <a href="https://github.com/MitkoVtori/Moving-Target"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Moving-Target"/></a>
+                    <a href="https://github.com/MitkoVtori/SoftUni-Python-Advanced-OOP-2023-01"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=SoftUni-Python-Advanced-OOP-2023-01"/></a>
+                    <a href="https://github.com/MitkoVtori/T3chSchool"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=T3chSchool"/></a>
+                    <a href="https://github.com/MitkoVtori/Python-login-signup"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Python-login-signup"/></a>
+                    <a href="https://github.com/MitkoVtori/Rock-Paper-Scissors-version-1.2.5"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Rock-Paper-Scissors-version-1.2.5"/></a>
+                    <a href="https://github.com/MitkoVtori/basic-calculator "><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=basic-calculator"/></a>
+                    <a href="https://github.com/MitkoVtori/Message-me"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Message-me"/></a>
+                    <a href="https://github.com/MitkoVtori/django-phonebook-basic-web-project"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=django-phonebook-basic-web-project"/></a>
+                    <a href="https://github.com/MitkoVtori/Fundamentals-Common"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=Fundamentals-Common"/></a>
+                    <a href="https://github.com/MitkoVtori/SoftUni-Judge-System"><img class="hover" width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=MitkoVtori&theme=radical&repo=SoftUni-Judge-System "/></a>
+                </section>
+            </div>
+        <section id="StackOverflow">
+            <a href="https://stackoverflow.com/users/20446595/mitko-vtori">
+                <button class="hover">
+                    <img width="250" src="images/StackOverflow.png">
+                </button>
+            </a>
+        </section>
+    </div>
+    <div class="socialmedia">
+        <section id="socials">
+            <ul style="margin: 0" class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100080198403604" class="social-square" id="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/insta_mitkov07/" class="social-square" id="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@mitkovtori" class="social-square" id="youtube"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dimitar-dimitrov-274807254/" class="social-square" id="in"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/MitkoVtori" class="social-square" id="git"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/20446595/mitko-vtori" class="social-square" id="stackoverflo"><i class="fa fa-stack-overflow"></i></a></li>
+            </ul>
+        </section>
+        <section id="topSecret">
+            <button onmouseover="buttonHover(this);" onmouseout="buttonUnhover(this);" id="topSecretButton"><span style="font-size: 250%">Top Secret</span></button>
+            <a href="https://github.com/MitkoVtori/MitkoVtori.github.io">
+                <img class="hover" id="streak" onmouseover="streakStatsHover(this);" onmouseout="streakStatsUnhover(this);" alt="My GitHub Streak Stats" src="https://streak-stats.demolab.com?user=MitkoVtori&theme=highcontrast">
+            </a>
+            <section id="source">
+                <p>View page source
+                    <a href="https://github.com/MitkoVtori/MitkoVtori.github.io">
+                        <button>MitkoVtori.github.io Page Source Code</button>
+                    </a>
+                </p>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
