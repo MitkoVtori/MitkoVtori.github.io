@@ -3,14 +3,14 @@
 
 ## Explanations
 
--    [JavaScript]("#JavaScript")
-      -  [Show and Hide Repositories]("#1.ShowHideRepos.js")
-      -  [Change Buttons Color]("#2.ChangeButtonColor.js")
-      -  [Switch Images]("#3.switchimage.js")
--    [CSS3]("#CSS")
-      -  [On mouseover effect]("#onhover")
-      -  [Socials]("#socials")
-      -  [Rest of the style]("#style")
+-    [JavaScript](#JavaScript)
+      -  [Show and Hide Repositories](#1.ShowHideRepos.js)
+      -  [Change Buttons Color](#2.ChangeButtonColor.js)
+      -  [Switch Images](#3.switchimage.js)
+-    [CSS3](#CSS)
+      -  [On mouseover effect](#onhover)
+      -  [Socials](#socials)
+      -  [Rest of the style](#style)
 
 # JavaScript
 #### 1.ShowHideRepos.js
