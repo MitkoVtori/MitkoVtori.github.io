@@ -4,16 +4,16 @@
 ## Explanations
 
 -    [JavaScript](#JavaScript)
-      -  [Show and Hide Repositories](#1.ShowHideRepos.js)
-      -  [Change Buttons Color](#2.ChangeButtonColor.js)
-      -  [Switch Images](#3.switchimage.js)
+      -  [Show and Hide Repositories](#ShowHideRepos)
+      -  [Change Buttons Color](#ChangeButtonColor)
+      -  [Switch Images](#switchimage)
 -    [CSS3](#CSS)
       -  [On mouseover effect](#onhover)
       -  [Socials](#socials)
       -  [Rest of the style](#style)
 
 # JavaScript
-#### 1.ShowHideRepos.js
+#### ShowHideRepos
 This is a function that onclick shows and hides list of my most **popular repositories**
 <details>
  <summary><b>🖼 Show Picture</b></summary>
@@ -36,7 +36,7 @@ function ShowHideRepos() {
 }
 ```
 
-#### 2.ChangeButtonColor.js
+#### ChangeButtonColor
 This functions change the button color of the link buttons in the **sections** section.
 <details>
  <summary><b>🔍 Show <strong>sections</strong> section</b></summary>
@@ -107,7 +107,7 @@ function ChangeSocialsButtonColor() {
 }
 ```
 
-#### 3.switchimage.js
+#### switchimage
 Changes the image when mouseover
 <details>
  <summary><b>🖼 Show Picture</b></summary>
