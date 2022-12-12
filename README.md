@@ -161,7 +161,7 @@ This makes pictures, text & buttons bigger on mouseover
 ```
 
 #### socials
-<img src="Social Buttons.gif">
+<img src="readme_images/Social Buttons.gif">
 
 ```css
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
