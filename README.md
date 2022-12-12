@@ -18,10 +18,10 @@ This is a function that onclick shows and hides list of my most **popular reposi
 <details>
  <summary><b>🖼 Show Picture</b></summary>
 
-<img width="750" src="https://user-images.githubusercontent.com/112943652/207104348-7656eb09-7b70-4a60-86d9-103dddba68f6.png">
+<img width="750" src="readme_images/TopReposHidden.png">
 <br>
 <br>
-<img width="750" src="https://user-images.githubusercontent.com/112943652/207104340-0495cad2-b20b-4a60-a3b8-36e9ae5a81ad.png">
+<img width="750" src="readme_images/TopReposVisible.png">
 
 </details>
 
@@ -58,9 +58,9 @@ This functions change the button color of the link buttons in the **sections** s
 <details>
  <summary><b>🖼 Show Pictures</b></summary>
 
-<img width="750" src="https://user-images.githubusercontent.com/112943652/207107978-31872355-31b6-4e05-9062-08600cb16039.png">
-<img width="750" src="https://user-images.githubusercontent.com/112943652/207108062-93578639-99cf-494a-9e45-35ed1974e000.png">
-<img width="750" src="https://user-images.githubusercontent.com/112943652/207108156-5966721b-7f19-409a-b26d-1dc751ffdf28.png">
+<img width="750" src="readme_images/home.png">
+<img width="750" src="readme_images/about.png">
+<img width="750" src="readme_images/certificates.png">
 
 </details>
 
@@ -112,10 +112,10 @@ Changes the image when mouseover
 <details>
  <summary><b>🖼 Show Picture</b></summary>
 
-<img width="250" src="https://user-images.githubusercontent.com/112943652/207109756-d1a86bbe-9295-44f1-b438-e908b15f356b.png">
+<img width="250" src="readme_images/certificate-front.png">
 <br>
 <br>
-<img width="250" src="https://user-images.githubusercontent.com/112943652/207109836-2101dbc3-a699-41d2-a2af-6a04dade5527.png">
+<img width="250" src="readme_images/certificate-back.png">
 
 </details>
 
@@ -161,7 +161,8 @@ This makes pictures, text & buttons bigger on mouseover
 ```
 
 #### socials
-![Social Buttons](https://user-images.githubusercontent.com/112943652/207113235-2d8a2641-e044-415b-a01c-fa13cdda3ae8.gif)
+<img src="Social Buttons.gif">
+
 ```css
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
