@@ -4,9 +4,10 @@
 ## Explanations
 
 -    [JavaScript](#JavaScript)
-      -  [Show and Hide Repositories](#ShowHideRepos)
-      -  [Change Buttons Color](#ChangeButtonColor)
-      -  [Switch Images](#switchimage)
+      - [Show and Hide Repositories](#ShowHideRepos)
+      - [Change Buttons Color](#ChangeButtonColor)
+      - [Sound Effects](#soundEffects)
+      - [Switch Images](#switchimage)
 -    [CSS3](#CSS)
       -  [On mouseover effect](#onhover)
       -  [Socials](#socials)
@@ -44,11 +45,11 @@ This functions change the button color of the link buttons in the **sections** s
 ```html
 <div id="sections">
         <p>
-            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor()" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 21%">Home</button></a>
-            <a href="#About"><button class="hover" onclick="ChangeAboutButtonColor()" id="AboutButton" style="background: black; color: white; margin-left: 3%">About</button></a>
-            <a href="#certificates"><button class="hover" onclick="ChangeCertificatesButtonColor()" id="certificatesButton" style="background: black; color: white; margin-left: 3%">Certificates</button></a>
-            <a href="#TopRepos"><button class="hover" onclick="ChangeRepoButtonColor()" id="RepoButton" style="background: black; color: white; margin-left: 3%">Repositories</button></a>
-            <a href="#socials"><button class="hover" onclick="ChangeSocialsButtonColor()" id="SocialsButton" style="background: black; color: white; margin-left: 3%">Socials</button></a>
+            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor(); clickSound()" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 21%">Home</button></a>
+            <a href="#About"><button class="hover" onclick="ChangeAboutButtonColor(); clickSound()" id="AboutButton" style="background: black; color: white; margin-left: 3%">About</button></a>
+            <a href="#certificates"><button class="hover" onclick="ChangeCertificatesButtonColor(); clickSound()" id="certificatesButton" style="background: black; color: white; margin-left: 3%">Certificates</button></a>
+            <a href="#TopRepos"><button class="hover" onclick="ChangeRepoButtonColor(); clickSound()" id="RepoButton" style="background: black; color: white; margin-left: 3%">Repositories</button></a>
+            <a href="#socials"><button class="hover" onclick="ChangeSocialsButtonColor(); clickSound()" id="SocialsButton" style="background: black; color: white; margin-left: 3%">Socials</button></a>
         </p>
     </div>
 ```
@@ -104,6 +105,21 @@ function ChangeSocialsButtonColor() {
  document.getElementById("homeButton").style.color = "white";
  document.getElementById("AboutButton").style.color = "white";
  document.getElementById("certificatesButton").style.color = "white";
+}
+```
+
+### soundEffects
+```JavaScript
+function clickSound() {
+    var sound = new Audio("soundEffects/click.wav");
+    sound.play();
+    sound.currentTime=0;
+}
+
+function windOnMouseOver() {
+    var sound = new Audio("soundEffects/fly.wav");
+    sound.play();
+    sound.currentTime=0;
 }
 ```
 
