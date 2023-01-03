@@ -179,6 +179,8 @@ This makes pictures, text & buttons bigger on mouseover
 #### socials
 <img src="readme_images/Social Buttons.gif">
 
+Default version, see full code [here](styles/social.css)
+
 ```css
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
@@ -262,7 +264,9 @@ This makes pictures, text & buttons bigger on mouseover
 ```
 
 ### style
-This is the rest of the style. It has comments with explanations in it.
+This is the default version of the rest of the style. It has comments with explanations in it.
+
+**See the full code [here](styles/style.css)**
 ```css
 html {
     background: black;
