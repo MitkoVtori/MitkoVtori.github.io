@@ -16,7 +16,7 @@
 <body>
     <div id="sections">
         <p>
-            <a href="#home"><button class="hover" onclick="ChangeHomeButtonColor(); clickSound();" id="homeButton" style="background: black; color: white; margin: 0; margin-left: 21%">Home</button></a>
+            <a href="#home" class="homeButton"><button class="hover" onclick="ChangeHomeButtonColor(); clickSound();" id="homeButton" style="background: black; color: white; margin: 0;">Home</button></a>
             <a href="#About"><button class="hover" onclick="ChangeAboutButtonColor(); clickSound();" id="AboutButton" style="background: black; color: white; margin-left: 3%">About</button></a>
             <a href="#certificates"><button class="hover" onclick="ChangeCertificatesButtonColor(); clickSound();" id="certificatesButton" style="background: black; color: white; margin-left: 3%">Certificates</button></a>
             <a href="#TopRepos"><button class="hover" onclick="ChangeRepoButtonColor(); clickSound();" id="RepoButton" style="background: black; color: white; margin-left: 3%">Repositories</button></a>
@@ -32,8 +32,8 @@
         </section>
         <section id="GitHub">
             <a href="https://github.com/MitkoVtori">
-                <button class="hover" style="background: black; color: #EAECEC; font-size: 35px">
-                    <img width="25" src="images/GitHub.png"> GitHub
+                <button class="hover" style="background: black; color: #EAECEC;">
+                    <img src="images/GitHub.png"> GitHub
                 </button>
             </a>
         </section>
@@ -41,7 +41,7 @@
     <div class="About">
         <section id="About">
             <p>
-                <img class="hover" src="images/Programmer.gif" style="float:right; margin-right: 5%; width: 25%">
+                <img class="hover" src="images/Programmer.gif" style="float:right; margin-right: 5%;">
                 <br>
                 <br>
                 <br>
@@ -54,8 +54,8 @@
         </section>
         <section id="Linkedin">
             <a href="https://www.linkedin.com/in/dimitar-dimitrov-274807254/">
-                <button class="hover" style="font-size: 30px; background: #4ACFF0; color: #2C6EF1">
-                    <img width="30" src="images/LinkedIN.png"> Linkedin
+                <button class="hover" style="background: #4ACFF0; color: #2C6EF1">
+                    <img src="images/LinkedIN.png"> Linkedin
                 </button>
             </a>
         </section>
@@ -63,15 +63,15 @@
     <div class="certificates">
         <section id="certificates">
             <a href="https://softuni.bg/Certificates/Details/148911/81475bf5">
-                    <img class="hover" onmouseover="certificateHover(this);" onmouseout="certificateUnhover(this);" id="curriculum" style="margin-top: 5%; margin-left: 35%; width: 25%; margin-bottom: 5%;" src="images/Programming Fundamentals with Python - September 2022 - Certificate.png">
+                    <img class="hover" onmouseover="certificateHover(this);" onmouseout="certificateUnhover(this);" id="curriculum" style="margin-top: 5%; margin-left: 35%; margin-bottom: 5%;" src="images/Programming Fundamentals with Python - September 2022 - Certificate.png">
             </a>
         </section>
     </div>
     <div class="TopRepos">
         <section id="TopRepos">
             <br>
-            <p style="color: white; margin-top: 10%; font-size: 550%">Top Repositories</p>
-            <a href="#repositories"><img width="700" class="hover" onclick="ShowHideRepos()" src="videos/TopRepos.gif"></a>
+            <p style="color: white; margin-top: 10%;">Top Repositories</p>
+            <a href="#repositories"><img class="hover" onclick="ShowHideRepos()" src="videos/TopRepos.gif"></a>
         </section>
             <div class="expandable" id="repositories">
                 <section>
@@ -98,7 +98,7 @@
         <section id="StackOverflow">
             <a href="https://stackoverflow.com/users/20446595/mitko-vtori">
                 <button class="hover">
-                    <img width="250" src="images/StackOverflow.png">
+                    <img src="images/StackOverflow.png">
                 </button>
             </a>
         </section>
