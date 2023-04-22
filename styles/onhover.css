@@ -1,7 +1,0 @@
-.hover {
-  transform: scale(1);
-  transition: transform .5s;
-}
-.hover:hover {
-  transform: scale(1.2);
-}
