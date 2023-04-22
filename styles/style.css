@@ -1,1032 +1,1701 @@
 html {
-    background: black;
+    background: #263333;
 }
 
-body {
-    background: pink;
+@media(max-width: 1199px){
+#pfp {
+    border-radius: 95px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 300px;
 }
 
-@media screen and (max-width: 519px) {
-    #sections {
-        display: none;
-    }
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 30%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 10px;
-    }
-    #GitHub a button img {
-        width: 8px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        font-size: 60%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 0%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 23%;
-        height: 100%;
-        width: 60%;
-    }
-    #Linkedin a button {
-        font-size: 15px;
-    }
-    #Linkedin a button img {
-        width: 15px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 50%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 20%;
-    }
-    #TopRepos p {
-        font-size: 100%;
-        margin-left: 6%;
-    }
-    #TopRepos a img {
-        width: 120px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    #StackOverflow a button img {
-        width: 50px;
-    }
-    #topSecret {
-        display: none;
-    }
+#Ins {
+    float: left;
+    margin-top: 45px;
+    width: 10px;
 }
 
-@media screen and (min-width: 520px) {
-    .homeButton {
-        margin-left: 5%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 6%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 100%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 15px;
-    }
-    #GitHub a button img {
-        width: 10px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        font-size: 90%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 0%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 23%;
-        height: 150%;
-        width: 90%;
-    }
-    #Linkedin a button {
-        font-size: 20px;
-    }
-    #Linkedin a button img {
-        width: 20px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 50%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 20%;
-    }
-    #TopRepos p {
-        font-size: 300%;
-        margin-left: 6%;
-    }
-    #TopRepos a img {
-        width: 520px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    #StackOverflow a button img {
-        width: 200px;
-    }
-    #topSecret {
-        display: none;
-    }
+#name {
+    float: left;
+    position: relative;
+    width: 350px;
+    margin-top: 25px;
+    display: none;
 }
 
-@media screen and (min-width: 618px) {
-    .homeButton {
-        margin-left: 18%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 6%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 100%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 25px;
-    }
-    #GitHub a button img {
-        width: 15px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        margin-left: 20px;
-        font-size: 100%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 0%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 23%;
-        height: 200%;
-        width: 100%;
-    }
-    #Linkedin a button {
-        font-size: 20px;
-    }
-    #Linkedin a button img {
-        width: 20px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 35%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 20%;
-    }
-    #TopRepos p {
-        font-size: 300%;
-        margin-left: 6%;
-    }
-    #TopRepos a img {
-        width: 520px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    #StackOverflow a button img {
-        width: 200px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 450px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 15%;
-        width: 30%;
-        margin-top: 20%;
-        margin-left: 3%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 47%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 50%;
-    }
-    #source {
-        margin-top: 17%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#github-logo {
+    position: absolute;
+    width: 20px;
+    top: 106px;
+    left: 35px;
 }
 
-@media screen and (min-width: 735px) {
-    .homeButton {
-        margin-left: 18%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 6%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 100%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 35px;
-    }
-    #GitHub a button img {
-        width: 25px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        margin-left: 20px;
-        font-size: 150%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 0%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 23%;
-        height: 200%;
-        width: 100%;
-    }
-    #Linkedin a button {
-        font-size: 30px;
-    }
-    #Linkedin a button img {
-        width: 20px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 35%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 20%;
-    }
-    #TopRepos p {
-        font-size: 300%;
-        margin-left: 6%;
-    }
-    #TopRepos a img {
-        width: 520px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    #StackOverflow a button img {
-        width: 200px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 400px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 15%;
-        width: 25%;
-        margin-top: 17%;
-        margin-left: 7%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 10%;
-        margin-top: 10%;
-        width: 50%;
-    }
-    #source {
-        margin-top: 17%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 100px;
+    left: 60px;
 }
 
-@media screen and (min-width: 829px) {
-    .homeButton {
-        margin-left: 12%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 8%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 150%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 35px;
-    }
-    #GitHub a button img {
-        width: 25px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        margin-left: 20px;
-        font-size: 150%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 0%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 23%;
-        height: 200%;
-        width: 100%;
-    }
-    #Linkedin a button {
-        font-size: 30px;
-    }
-    #Linkedin a button img {
-        width: 20px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 35%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 20%;
-    }
-    #TopRepos p {
-        font-size: 300%;
-        margin-left: 6%;
-    }
-    #TopRepos a img {
-        width: 520px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 30%;
-    }
-    #StackOverflow a button img {
-        width: 200px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 400px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 15%;
-        width: 25%;
-        margin-top: 17%;
-        margin-left: 7%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 10%;
-        margin-top: 10%;
-        width: 50%;
-    }
-    #source {
-        margin-top: 17%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#linkedin-logo {
+    position: absolute;
+    width: 20px;
+    top: 152px;
+    left: 35px;
 }
 
-@media screen and (min-width: 948px) {
-    .homeButton {
-        margin-left: 10%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 10%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 200%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 35px;
-    }
-    #GitHub a button img {
-        width: 25px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        font-size: 155%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 25%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 19%;
-        height: 200%;
-        width: 100%;
-    }
-    #Linkedin a button {
-        font-size: 30px;
-    }
-    #Linkedin a button img {
-        width: 30px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 35%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 25%;
-    }
-    #TopRepos p {
-        font-size: 350%;
-        margin-left: 5%;
-    }
-    #TopRepos a img {
-        width: 570px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 35%;
-    }
-    #StackOverflow a button img {
-        width: 200px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 500px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 15%;
-        width: 19%;
-        margin-top: 15%;
-        margin-left: 7%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 20%;
-        margin-top: 10%;
-        width: 40%;
-    }
-    #source {
-        margin-top: 18%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 145px;
+    left: 60px;
 }
 
-@media screen and (min-width: 1224px) {
-    .homeButton {
-        margin-left: 10%;
-    }
-
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 10%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 250%;
-        }
-
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 35px;
-    }
-    #GitHub a button img {
-        width: 25px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        font-size: 185%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 25%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 19%;
-    }
-    #Linkedin a button {
-        font-size: 30px;
-    }
-    #Linkedin a button img {
-        width: 30px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 25%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 25%;
-    }
-    #TopRepos p {
-        font-size: 550%;
-        margin-left: 5%;
-    }
-    #TopRepos a img {
-        width: 770px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
-
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 40%;
-    }
-    #StackOverflow a button img {
-        width: 250px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 500px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 14%;
-        width: 15%;
-        margin-top: 15%;
-        margin-left: 7%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 25%;
-        margin-top: 10%;
-        width: 35%;
-    }
-    #source {
-        margin-top: 12%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#gmail {
+    position: absolute;
+    width: 20px;
+    top: 192px;
+    left: 35px;
 }
 
-@media screen and (min-width: 1464px) {
-    .homeButton {
-        margin-left: 18%;
-    }
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 185px;
+    left: 60px;
+}
 
-    #sections {
-        background: black;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        height: 10%;
-        width: 100%;
-    }
-        #sections button {
-            font-size: 250%;
-        }
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 65px;
+    top: 250px;
+    left: 35px;
+}
 
-    .home {
-        background: pink;
-    }
-    #GitHub {
-        margin-left: 75%;
-        margin-top: 5%;
-    }
-    #GitHub a button {
-        font-size: 35px;
-    }
-    #GitHub a button img {
-        width: 25px;
-    }
-    .About {
-        background: #22DEFF;
-    }
-    #About {
-        font-size: 185%;
-        color: #8A3090;
-    }
-    #About p img {
-        width: 25%;
-    }
-    #Linkedin {
-        margin-top: 5%;
-        margin-left: 19%;
-    }
-    #Linkedin a button {
-        font-size: 30px;
-    }
-    #Linkedin a button img {
-        width: 30px;
-    }
-    .certificates {
-        background: #959191;
-    }
-    #certificates a img {
-        width: 25%;
-    }
-    .TopRepos {
-        background: black;
-    }
-    #TopRepos {
-        margin-left: 24%;
-    }
-    #TopRepos p {
-        font-size: 550%;
-    }
-    #TopRepos a img {
-        width: 770px;
-    }
-    .expandable {
-        overflow: hidden;
-        line-height: 90%;
-        transition: all .5s ease-in-out;
-        height: 0;
-    }
+.py {
+    position: absolute;
+    top: 399px;
+    left: 35px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 35px;
+    color: #494743;
+    z-index: 99;
+}
 
-        .expandable:target {
-            height: 100%;
-        }
-    #repositories {
-        background: white;
-    }
-    #StackOverflow {
-        margin-top: 10%;
-        margin-left: 40%;
-    }
-    #StackOverflow a button img {
-        width: 250px;
-    }
-    #topSecret {
-        display: block;
-        background: gray;
-        height: 500px;
-    }
-    #topSecretButton {
-        transition: .5s;
-        background-color: #E9BE0E;
-        color: #424B4D;
-        border: 75;
-        height: 14%;
-        width: 15%;
-        margin-top: 12%;
-        margin-left: 7%;
-    }
-    #topSecretButton:hover {
-        background: gray;
-        border: 0;
-        color: gray;
-        transition: 0s 0s;
-    }
-    #hiddenText {
-        display: none;
-    }
-    #topSecretButton:focus + #hiddenText {
-        display: block;
-    }
-    #topSecretButton:hover span {
-        display: none
-    }
-    #streak {
-        float:right;
-        margin-right: 25%;
-        margin-top: 8%;
-        width: 35%;
-    }
-    #source {
-        margin-top: 9%;
-        margin-left: 0.85%;
-        font-size: 125%;
-    }
-    #source button {
-        background: gray;
-        border: 0;
-        font-size: 100%;
-        color: #9C00F0;
-    }
+#python {
+    position: absolute;
+    top: 440px;
+    left: 35px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+#python-logo {
+    width: 25px;
+}
+
+.py:hover + #python {
+    height: 290px;
+}
+
+#python:hover {
+    height: 290px;
+}
+
+.html-css {
+    position: absolute;
+    top: 399px;
+    left: 275px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 430px;
+    left: 276px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+.html-css:hover + #html-css {
+    height: 300px;
+}
+
+#html-css:hover {
+    height: 300px;
+}
+
+.github {
+    position: absolute;
+    top: 399px;
+    left: 515px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 430px;
+    left: 515px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    margin-down: 2500px;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+#git-logo {
+    width: 25px;
+}
+
+.github:hover + #github {
+    height: 420px;
+}
+
+#github:hover {
+    height: 420px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 25px;
+    top: 850px;
+    left: 15px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 20px;
+    top: 895px;
+    left: 15px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 25px;
+    top: 850px;
+    left: 300px;
+}
+
+#about-softuni {
+    font-size: 20px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 20px;
+    top: 930px;
+    left: 300px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 960px;
+    left: 320px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 20px;
+}
+
+.projects {
+    position: absolute;
+    top: 1250px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 65px;
+}
+
+.projects a img {
+    width: 240px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 2150px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 35px;
+    top: 2220px;
+    left: 10%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 35px;
+    top: 2220px;
+    left: 70%;
+}
+}
+
+@media(max-width: 758px){
+#pfp {
+    border-radius: 95px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 200px;
+}
+
+#Ins {
+    float: left;
+    margin-top: 35px;
+    width: 5px;
+}
+
+#name {
+    float: left;
+    position: relative;
+    width: 180px;
+    margin-top: 25px;
+    display: none;
+}
+
+#github-logo {
+    position: absolute;
+    width: 15px;
+    top: 80px;
+    left: 25px;
+}
+
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 75px;
+    left: 45px;
+}
+
+#linkedin-logo {
+    position: absolute;
+    width: 15px;
+    top: 100px;
+    left: 25px;
+}
+
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 95px;
+    left: 45px;
+}
+
+#gmail {
+    position: absolute;
+    width: 15px;
+    top: 125px;
+    left: 25px;
+}
+
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 122px;
+    left: 45px;
+}
+
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 25px;
+    top: 150px;
+}
+
+.py {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#python {
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+}
+
+#python-logo {
+    width: 20px;
+}
+
+#python:hover {
+    height: 300px;
+}
+
+.html-css {
+    position: absolute;
+    top: 565px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 295px;
+}
+
+#html-css:hover {
+    height: 295px;
+}
+
+.github {
+    position: absolute;
+    top: 900px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 940px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 415px;
+}
+
+#git-logo {
+    width: 15px;
+}
+
+#github:hover {
+    height: 415px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 20px;
+    top: 1350px;
+    left: 15px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 15px;
+    top: 1375px;
+    left: 15px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 20px;
+    top: 1350px;
+    left: 220px;
+}
+
+#about-softuni {
+    font-size: 15px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 15px;
+    top: 1400px;
+    left: 220px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 1430px;
+    left: 230px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 15px;
+}
+
+.projects {
+    position: absolute;
+    top: 1700px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 45px;
+}
+
+.projects a img {
+    width: 200px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 2370px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 2400px;
+    left: 10%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 2400px;
+    left: 70%;
+}
+}
+
+@media(max-width: 459px){
+#pfp {
+    border-radius: 95px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 100px;
+}
+
+#Ins {
+    float: left;
+    margin-top: 35px;
+    width: 5px;
+}
+
+#name {
+    float: left;
+    position: relative;
+    width: 180px;
+    margin-top: 25px;
+    display: none;
+}
+
+#github-logo {
+    position: absolute;
+    width: 15px;
+    top: 80px;
+    left: 25px;
+}
+
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 75px;
+    left: 45px;
+}
+
+#linkedin-logo {
+    position: absolute;
+    width: 15px;
+    top: 100px;
+    left: 25px;
+}
+
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 95px;
+    left: 45px;
+}
+
+#gmail {
+    position: absolute;
+    width: 15px;
+    top: 125px;
+    left: 25px;
+}
+
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 122px;
+    left: 45px;
+}
+
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 25px;
+    top: 150px;
+}
+
+.py {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#python {
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+}
+
+#python-logo {
+    width: 20px;
+}
+
+#python:hover {
+    height: 300px;
+}
+
+.html-css {
+    position: absolute;
+    top: 565px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 295px;
+}
+
+#html-css:hover {
+    height: 295px;
+}
+
+.github {
+    position: absolute;
+    top: 900px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 940px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 415px;
+}
+
+#git-logo {
+    width: 15px;
+}
+
+#github:hover {
+    height: 415px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 20px;
+    top: 1350px;
+    left: 15px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 15px;
+    top: 1375px;
+    left: 15px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 20px;
+    top: 1350px;
+    left: 220px;
+}
+
+#about-softuni {
+    font-size: 15px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 15px;
+    top: 1400px;
+    left: 220px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 1430px;
+    left: 230px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 15px;
+}
+
+.projects {
+    position: absolute;
+    top: 1700px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 45px;
+}
+
+.projects a img {
+    width: 165px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 2610px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 2640px;
+    left: 10%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 2640px;
+    left: 70%;
+}
+}
+
+@media(max-width: 344px){
+#pfp {
+    position: absolute;
+    float: left;
+    border-radius: 95px;
+    top: 90px;
+    left: 110px;
+    width: 80px;
+}
+
+#Ins {
+    float: left;
+    margin-top: 35px;
+    width: 5px;
+}
+
+#name {
+    float: left;
+    position: relative;
+    width: 180px;
+    margin-top: 25px;
+    display: none;
+}
+
+#github-logo {
+    position: absolute;
+    width: 15px;
+    top: 140px;
+    left: 25px;
+}
+
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 135px;
+    left: 45px;
+}
+
+#linkedin-logo {
+    position: absolute;
+    width: 15px;
+    top: 160px;
+    left: 25px;
+}
+
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 155px;
+    left: 45px;
+}
+
+#gmail {
+    position: absolute;
+    width: 15px;
+    top: 180.5px;
+    left: 25px;
+}
+
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 179px;
+    left: 45px;
+}
+
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 25px;
+    top: 200px;
+}
+
+.py {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#python {
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+}
+
+#python-logo {
+    width: 20px;
+}
+
+#python:hover {
+    height: 300px;
+}
+
+.html-css {
+    position: absolute;
+    top: 595px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 630px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 295px;
+}
+
+#html-css:hover {
+    height: 295px;
+}
+
+.github {
+    position: absolute;
+    top: 930px;
+    left: 10px;
+    background: #3AF472;
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 970px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 227px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 415px;
+}
+
+#git-logo {
+    width: 15px;
+}
+
+#github:hover {
+    height: 415px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 15px;
+    top: 1380px;
+    left: 15px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 10px;
+    top: 1405px;
+    left: 15px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 15px;
+    top: 1380px;
+    left: 160px;
+}
+
+#about-softuni {
+    font-size: 10px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 10px;
+    top: 1430px;
+    left: 160px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    top: 1460px;
+    left: 160px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 10px;
+}
+
+.projects {
+    position: absolute;
+    top: 1700px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 45px;
+}
+
+.projects a img {
+    width: 120px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 2440px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 2470px;
+    left: 10%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 2470px;
+    left: 70%;
+}
+}
+
+@media(max-width: 255px){
+#pfp {
+    position: absolute;
+    float: left;
+    border-radius: 95px;
+    top: 50px;
+    left: 50px;
+    width: 80px;
+}
+
+#Ins {
+    float: left;
+    margin-top: 35px;
+    width: 5px;
+}
+
+#name {
+    float: left;
+    position: relative;
+    width: 180px;
+    margin-top: 25px;
+    display: none;
+}
+
+#github-logo {
+    position: absolute;
+    width: 15px;
+    top: 140px;
+    left: 25px;
+}
+
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 135px;
+    left: 45px;
+}
+
+#linkedin-logo {
+    position: absolute;
+    width: 15px;
+    top: 160px;
+    left: 25px;
+}
+
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 20px;
+    top: 155px;
+    left: 45px;
+}
+
+#gmail {
+    position: absolute;
+    width: 15px;
+    top: 180.5px;
+    left: 25px;
+}
+
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 15px;
+    top: 179px;
+    left: 45px;
+}
+
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 20px;
+    top: 200px;
+}
+
+.py {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    background: #3AF472;
+    width: 150px;
+    height: 45px;
+    font-size: 25px;
+    color: #494743;
+    z-index: 99;
+}
+
+#python {
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 147px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 435px;
+}
+
+#python-logo {
+    width: 20px;
+}
+
+#python:hover {
+    height: 435px;
+}
+
+.html-css {
+    position: absolute;
+    top: 730px;
+    left: 10px;
+    background: #3AF472;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 760px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 147px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 455px;
+}
+
+#html-css:hover {
+    height: 455px;
+}
+
+.github {
+    position: absolute;
+    top: 1220px;
+    left: 10px;
+    background: #3AF472;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 1262px;
+    left: 10px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    margin-left: 27%;
+    width: 147px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    height: 685px;
+}
+
+#git-logo {
+    width: 15px;
+}
+
+#github:hover {
+    height: 685px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 15px;
+    top: 2200px;
+    left: 15px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 10px;
+    top: 2235px;
+    left: 15px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 15px;
+    top: 1960px;
+    left: 10px;
+}
+
+#about-softuni {
+    font-size: 10px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 10px;
+    top: 2000px;
+    left: 10px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    top: 2020px;
+    left: 20px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 10px;
+}
+
+.projects {
+    position: absolute;
+    top: 2350px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 45px;
+}
+
+.projects a img {
+    width: 120px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 3140px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 10px;
+    top: 3170px;
+    left: 10%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 10px;
+    top: 3170px;
+    left: 70%;
+}
+}
+
+@media(min-width: 1200px){
+#pfp {
+    border-radius: 95px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 300px;
+}
+
+#Ins {
+    float: left;
+    margin-top: 65px;
+    width: 20px;
+}
+
+#name {
+    float: left;
+    position: relative;
+    width: 750px;
+    margin-top: 25px;
+    display: none;
+}
+
+#github-logo {
+    position: absolute;
+    width: 30px;
+    top: 176px;
+    left: 65px;
+}
+
+#github-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 176px;
+    left: 103px;
+}
+
+#linkedin-logo {
+    position: absolute;
+    width: 30px;
+    top: 212px;
+    left: 65px;
+}
+
+#linkedin-link {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 212px;
+    left: 103px;
+}
+
+#gmail {
+    position: absolute;
+    width: 30px;
+    top: 253px;
+    left: 65px;
+}
+
+#mail {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 25px;
+    top: 247px;
+    left: 103px;
+}
+
+.skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 65px;
+    top: 350px;
+    left: 65px;
+}
+
+.py {
+    position: absolute;
+    top: 499px;
+    left: 65px;
+    background: #3AF472;
+    width: 345px;
+    height: 75px;
+    font-size: 45px;
+    color: #494743;
+    z-index: 99;
+}
+
+#python {
+    position: absolute;
+    top: 570px;
+    left: 65px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    width: 343px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+#python-logo {
+    width: 35px;
+}
+
+.py:hover + #python {
+    height: 260px;
+}
+
+#python:hover {
+    height: 260px;
+}
+
+.html-css {
+    position: absolute;
+    top: 499px;
+    left: 420px;
+    background: #3AF472;
+    width: 345px;
+    height: 75px;
+    font-size: 35px;
+    color: #494743;
+    z-index: 99;
+}
+
+#html-css {
+    position: absolute;
+    top: 570px;
+    left: 420px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    width: 343px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+.html-css:hover + #html-css {
+    height: 240px;
+}
+
+#html-css:hover {
+    height: 240px;
+}
+
+.github {
+    position: absolute;
+    top: 499px;
+    left: 780px;
+    background: #3AF472;
+    width: 345px;
+    height: 75px;
+    font-size: 35px;
+    color: #494743;
+    z-index: 99;
+}
+
+#github {
+    position: absolute;
+    top: 570px;
+    left: 780px;
+    background: #0EC0C9;
+    border: 1px solid #D5D4D3;
+    overflow: hidden;
+    line-height: 200%;
+    margin-left: 27%;
+    margin-down: 2500px;
+    width: 343px;
+    margin: 0 auto;
+    color: #680192;
+    font-size: 15px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+#git-logo {
+    width: 35px;
+}
+
+.github:hover + #github {
+    height: 300px;
+}
+
+#github:hover {
+    height: 300px;
+}
+
+.soft-skills h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 65px;
+    top: 850px;
+    left: 65px;
+}
+
+.soft-skills p {
+    position: absolute;
+    color: #2AB2A2;
+    font-size: 30px;
+    top: 965px;
+    left: 95px;
+}
+
+.education h1 {
+    color: #E9952A;
+    position: absolute;
+    font-size: 65px;
+    top: 850px;
+    left: 550px;
+}
+
+#about-softuni {
+    font-size: 35px;
+}
+
+.education button {
+    background: #263333;
+    border: none;
+    color: #ECC100;
+    position: absolute;
+    font-size: 30px;
+    top: 980px;
+    left: 560px;
+}
+
+.education p {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 1010px;
+    left: 590px;
+}
+
+.education p a {
+    color: #0BFDEB;
+    font-size: 25px;
+}
+
+.projects {
+    position: absolute;
+    top: 1550px;
+    left: 10px;
+}
+
+.projects h1 {
+    color: #E9952A;
+    font-size: 65px;
+}
+
+.projects a img {
+    width: 350px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.projects a img:hover {
+    transform: scale(1.2);
+}
+
+.CV-source button {
+    position: absolute;
+    border: none;
+    background: #FF8700;
+    width: 100%;
+    height: 1px;
+    top: 2610px;
+    left: 0;
+}
+
+#CV {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 35px;
+    top: 2680px;
+    left: 30%;
+}
+
+#source {
+    position: absolute;
+    color: #0BFDEB;
+    font-size: 35px;
+    top: 2680px;
+    left: 50%;
+}
 }
